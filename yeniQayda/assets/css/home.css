@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  z-index: 1;
+  position: absolute;
+}
+nav .marcoLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .marcoLogo img {
+  width: 81px;
+  min-height: 71px;
+}
+
+header {
+  min-height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: fixed;
+  position: absolute;
+  top: 100px;
+}
+header .container {
+  display: flex;
+  min-height: 65px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #9b999c;
+  border-top: 1px solid #9b999c;
+}
+header .container .marcoList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 44%;
+}
+header .container .marcoList p {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+header .container .marcoList a {
+  text-decoration: none !important;
+}
+header .container .dropdown {
+  display: none;
+}
+header .container .dropdown button {
+  background-color: transparent !important;
+  border: none;
+}
+header .container .dropdown button i {
+  font-size: 20px;
+}
+header .container .dropdown .dropdown-menu {
+  width: 100%;
+  padding-left: 15px;
+}
+header .container .dropdown .dropdown-menu p {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+header .container .dropdown .dropdown-menu a {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 800px) {
+  header .container .marcoList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+}
+#deliciousRecipes {
+  min-height: 641px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#deliciousRecipes .deliciousRecipesTxt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#deliciousRecipes .deliciousRecipesTxt span {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 30px;
+}
+#deliciousRecipes .deliciousRecipesTxt h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 72px;
+}
+#deliciousRecipes .deliciousRecipesTxt p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 30px;
+  width: 42%;
+}
+#deliciousRecipes .deliciousRecipesTxt button {
+  min-height: 42px;
+  width: 16%;
+  border: none;
+  background-color: #F42F2C;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+#deliciousRecipes .deliciousRecipesTxt button:hover {
+  background-color: #222222;
+}
+
+#ourStory {
+  min-height: 629px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourStory .ourStoryTxt {
+  min-height: 629px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#ourStory .ourStoryTxt h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  color: #222;
+  font-weight: 600;
+  line-height: 50px;
+}
+#ourStory .ourStoryTxt p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+  line-height: 23px;
+}
+#ourStory .ourStoryTxt button {
+  min-height: 42px;
+  width: 33%;
+  border: none;
+  background-color: #F42F2C;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+#ourStory .hamburger {
+  width: 100%;
+  min-height: 641px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourStory .hamburger img {
+  width: 100%;
+}
+
+#reserve {
+  min-height: 743px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/images/reservation-bg.jpg);
+}
+#reserve .reserveTxt {
+  min-height: 743px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#reserve .reserveTxt h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  width: 80%;
+  line-height: 43px;
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reserve .reserveTxt p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  width: 87%;
+}
+#reserve .makeReserve {
+  min-height: 743px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reserve .makeReserve .makeReserveInp {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 15px;
+}
+#reserve .makeReserve .makeReserveInp input {
+  width: 80%;
+  min-height: 39px;
+  border: 1px solid #d0d0d0;
+}
+#reserve .makeReserve .makeReserveInp input::placeholder {
+  color: #9b999c;
+  padding-left: 15px;
+  font-size: 13px;
+}
+#reserve .makeReserve .makeReserveInp button {
+  min-height: 42px;
+  width: 33%;
+  border: none;
+  background-color: #F42F2C;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+#blog {
+  min-height: 820px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blog .blogTxt {
+  min-height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#blog .blogTxt h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  color: #222;
+  font-weight: 600;
+  line-height: 43px;
+}
+#blog .blogTxt p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #777;
+  width: 87%;
+  text-align: center;
+}
+#blog #productsAll {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#blog #productsAll .miniDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32%;
+  flex-direction: column;
+}
+#blog #productsAll .miniDiv img {
+  width: 80%;
+  border-radius: 15px;
+}
+#blog #productsAll .miniDiv h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  color: #222;
+  font-weight: 600;
+  line-height: 43px;
+}
+#blog #productsAll .miniDiv .wishAdd {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#blog #productsAll .miniDiv .wishAdd button {
+  border: none;
+  color: #F42F2C;
+  background-color: transparent;
+  font-weight: 600;
+}
+#blog #productsAll .miniDiv .wishAdd button i {
+  font-size: 20px;
+  color: #F42F2C;
+}
+#blog .loadMore {
+  width: 100%;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blog .loadMore button {
+  min-height: 45px;
+  width: 16%;
+  border: 2px solid #F42F2C;
+  font-family: Poppins, sans-serif;
+  background-color: transparent;
+  color: #F42F2C;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 700px) {
+  #blog #productsAll {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #blog #productsAll .miniDiv {
+    width: 100%;
+  }
+  #blog #productsAll .miniDiv img {
+    width: 50%;
+  }
+  #blog #productsAll .miniDiv .wishAdd {
+    width: 50%;
+  }
+}

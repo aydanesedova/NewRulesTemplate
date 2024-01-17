@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+}
+nav .marcoLogo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .marcoLogo img {
+  width: 81px;
+  min-height: 71px;
+}
+
+header {
+  min-height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  position: fixed;
+  position: absolute;
+  top: 100px;
+}
+header .container {
+  display: flex;
+  min-height: 65px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #9b999c;
+  border-top: 1px solid #9b999c;
+}
+header .container .marcoList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 44%;
+}
+header .container .marcoList p {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+header .container .marcoList a {
+  text-decoration: none !important;
+}
+header .container .dropdown {
+  display: none;
+}
+header .container .dropdown button {
+  background-color: transparent !important;
+  border: none;
+}
+header .container .dropdown button i {
+  font-size: 20px;
+}
+header .container .dropdown .dropdown-menu {
+  width: 100%;
+  padding-left: 15px;
+}
+header .container .dropdown .dropdown-menu p {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+header .container .dropdown .dropdown-menu a {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 800px) {
+  header .container .marcoList {
+    display: none;
+  }
+  header .container .dropdown {
+    display: block;
+  }
+}
+#wish {
+  min-height: 820px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wish #wishProducts {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#wish #wishProducts .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32%;
+  flex-direction: column;
+}
+#wish #wishProducts .box img {
+  width: 80%;
+  border-radius: 15px;
+}
+#wish #wishProducts .box h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  color: #222;
+  font-weight: 600;
+  line-height: 43px;
+}
+#wish #wishProducts .box button {
+  border: none;
+  color: #F42F2C;
+  background-color: transparent;
+  font-weight: 600;
+}
